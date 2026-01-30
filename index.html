@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siêu tiền đạo Huệ Lâm – 10C1</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* nền ảnh lớp */
+.bg{
+  position:fixed;
+  inset:0;
+  background:url("nenlop.jpg") center/cover no-repeat;
+  filter:brightness(0.45);
+  z-index:-1;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+  background:rgba(0,0,0,0.65);
+  min-height:100vh;
+}
+
+/* tiêu đề */
+h1{text-align:center;margin-bottom:6px}
+.sub{text-align:center;opacity:.85;margin-bottom:16px}
+
+/* ===== SLIDER ẢNH ===== */
+.slider{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  padding:20px 0 30px;
+  scroll-snap-type:x mandatory;
+}
+.slider::-webkit-scrollbar{display:none}
+
+.slide{
+  flex:0 0 200px;
+  height:260px;
+  background:rgba(255,255,255,.25);
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  color:#111;
+  scroll-snap-align:center;
+  transition:.35s;
+}
+.slide.active{
+  transform:scale(1.12);
+  background:#fff;
+  z-index:2;
+}
+.slide:not(.active){
+  opacity:.6;
+  transform:scale(.95);
+}
+
+/* ===== BÀI VIẾT ===== */
+.article p{
+  line-height:1.7;
+  margin-bottom:16px;
+}
+
+/* ===== GÓP Ý ===== */
+.comment-box{
+  margin-top:30px;
+  background:rgba(255,255,255,.95);
+  color:#000;
+  padding:16px;
+  border-radius:14px;
+}
+.comment-box h3{margin-bottom:10px}
+
+.comment-box input,
+.comment-box textarea{
+  width:100%;
+  padding:8px;
+  margin-bottom:8px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.anonymous{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-bottom:8px;
+}
+
+.comment-box button{
+  background:#ff4d6d;
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:18px;
+  cursor:pointer;
+}
+
+/* hiển thị bình luận */
+.comments{margin-top:14px}
+.comment{
+  background:#f1f1f1;
+  color:#000;
+  padding:8px;
+  border-radius:10px;
+  margin-bottom:6px;
+}
+
+/* ===== NHẠC ===== */
+#musicBox{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:rgba(255,255,255,.95);
+  color:#000;
+  padding:12px 16px;
+  border-radius:14px;
+  z-index:999;
+  text-align:center;
+}
+#musicBtn{
+  background:#ff4d6d;
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:20px;
+  font-weight:bold;
+}
+#musicStatus{
+  font-size:13px;
+  margin-top:6px;
+}
+</style>
+</head>
+
+<body>
+<div class="bg"></div>
+
+<div class="container">
+  <h1>⚽ Siêu tiền đạo Huệ Lâm – 10C1</h1>
+  <div class="sub">Tổng số bàn thắng: <b>2</b></div>
+
+  <!-- 6 ẢNH NẰM TRÊN -->
+  <div class="slider" id="slider">
+    <div class="slide active">Messenger_creation_DF4385A2-F229-4682-83D7-9CB2F522B3C2.jpeg</div>
+    <div class="slide">Messenger_creation_E4A7F5BD-AE8B-42C8-A861-F8B46FB18632.jpeg</div>
+    <div class="slide">Messenger_creation_D6883C7A-B8CE-4CFD-A450-3EE961483FB4.jpeg</div>
+    <div class="slide">Messenger_creation_2E38016A-D312-48E6-B5F5-D0D1B92E8299.jpeg</div>
+    <div class="slide">Messenger_creation_494357A6-0EE9-482B-AB08-DF45807A8AEC.jpeg</div>
+    <div class="slide">Messenger_creation_6535052F-F572-4BBA-944F-6EE0E6AACD4F.jpeg</div>
+  </div>
+
+  <!-- GIỚI THIỆU DÀI -->
+  <div class="article">
+    <p>Huệ Lâm là mẫu tiền đạo cấm hiếm có của 10C1, luôn biết cách xuất hiện đúng lúc trong vòng cấm.</p>
+    <p>Không cần quá nhiều chạm, khả năng dứt điểm gọn gàng giúp Lâm tận dụng tối đa từng cơ hội.</p>
+    <p>Dù mới ghi được 2 bàn thắng, nhưng mỗi pha lập công đều mang ý nghĩa quan trọng cho tập thể.</p>
+    <p>Sự bình tĩnh, tinh thần thi đấu và khả năng phối hợp là điểm mạnh rõ rệt của Huệ Lâm.</p>
+    <p>Trong tương lai, đây chắc chắn sẽ là mũi nhọn đáng gờm của 10C1. Mặc dù bị chê cười nhưng chính những nụ cười đó lại là niềm động lực hiếm có. Chính những bàn thắng ấy lại giúp lâm
+    lập nên những kỳ tích hiếm thấy, kế bên đó cặp đôi song sắt của Lâm là Ngọc Anh, mặc dù hay bị chê cười nhưng bạn ấy luôn luôn là cánh tay phải của Huệ Lâm giúp cho các bạn có những bàn thắng 
+    siêu vip. Siêu tiền đạo Huệ Lâm – 10C1 là mẫu cầu thủ không cần phải xuất hiện quá nhiều trên mặt báo hay được nhắc tên liên tục để khẳng định giá trị của mình.</p> Sự nguy hiểm của Huệ Lâm nằm ở chính sự thầm lặng đó. Trên sân, Lâm không phải là người rê bóng hoa mỹ hay tạo ra những pha xử lý cầu kỳ, nhưng mỗi lần bóng tiến gần khu vực vòng cấm, cái tên Huệ Lâm luôn khiến hàng phòng ngự đối phương phải dè chừng.
+Điều làm nên bản chất của một tiền đạo cấm đúng nghĩa chính là khả năng đọc tình huống và chọn vị trí, và Huệ Lâm làm điều đó một cách rất tự nhiên. Khi đồng đội còn đang tranh chấp ở tuyến giữa, Lâm đã âm thầm di chuyển, tìm kiếm khoảng trống giữa các hậu vệ. Có những pha bóng tưởng chừng như vô hại, nhưng chỉ cần một nhịp chạm hoặc một đường bóng bật ra, Huệ Lâm lập tức xuất hiện đúng điểm nóng nhất để tung ra cú dứt điểm.
+Không phải ngẫu nhiên mà Huệ Lâm được giao trọng trách chơi cao nhất trên hàng công của 10C1.</p> Ở vị trí tiền đạo cấm, áp lực luôn rất lớn: ít bóng, ít khoảng trống, nhưng mỗi cơ hội đều phải tận dụng. Huệ Lâm hiểu rõ điều đó và luôn giữ cho mình sự bình tĩnh cần thiết. Hai bàn thắng đã ghi được không chỉ phản ánh khả năng dứt điểm, mà còn cho thấy tâm lý thi đấu vững vàng – yếu tố cực kỳ quan trọng đối với một tiền đạo.
+Mỗi bàn thắng của Huệ Lâm đều mang ý nghĩa vượt xa con số thống kê. Đó là kết quả của sự phối hợp ăn ý với đồng đội, của những pha di chuyển không bóng tưởng như đơn giản nhưng lại vô cùng hiệu quả. Trong nhiều tình huống, chính việc Huệ Lâm thu hút sự chú ý của hậu vệ đối phương đã tạo điều kiện để các đồng đội phía sau có thêm không gian xử lý bóng.
+Không chỉ đóng vai trò ghi bàn, Huệ Lâm còn là người giữ nhịp cho hàng công. Khi đội bóng cần sự chắc chắn, Lâm sẵn sàng lùi về làm tường, che chắn bóng và tạo điều kiện cho tuyến hai băng lên. Khi đội cần sự đột biến, Huệ Lâm lập tức dâng cao, sẵn sàng chớp lấy cơ hội trong vòng cấm. Sự linh hoạt trong cách chơi giúp Huệ Lâm trở thành một mắt xích quan trọng trong hệ thống chiến thuật của 10C1.
+Tinh thần thi đấu của Huệ Lâm cũng là điểm khiến nhiều người ấn tượng. Trên sân, Lâm không bao giờ bỏ cuộc trong những pha tranh chấp tay đôi. Dù bị kèm chặt hay va chạm liên tục, Huệ Lâm vẫn giữ được sự tập trung và quyết tâm.</p> Chính tinh thần đó đã truyền năng lượng tích cực cho toàn đội, giúp 10C1 luôn duy trì được sự tự tin trong suốt trận đấu.
+Ngoài sân cỏ, Huệ Lâm là người khá trầm tính, không ồn ào.</p> Nhưng chính sự điềm tĩnh đó lại trở thành vũ khí khi bước vào trận đấu. Dưới áp lực từ khán giả và đối thủ, Huệ Lâm vẫn giữ được cái đầu lạnh để đưa ra những quyết định chính xác. Đây là tố chất không phải cầu thủ trẻ nào cũng có, đặc biệt là ở vị trí tiền đạo cấm – nơi mọi sai lầm đều có thể bị trả giá ngay lập tức.
+Hai bàn thắng hiện tại chỉ là khởi đầu cho hành trình của Huệ Lâm trong màu áo 10C1.</p> Điều quan trọng hơn cả là tiềm năng phát triển còn rất lớn. Khi kinh nghiệm thi đấu ngày càng dày dặn và sự ăn ý với đồng đội ngày càng cao, Huệ Lâm hoàn toàn có thể trở thành mũi nhọn chủ lực, người gánh vác trọng trách ghi bàn trong những trận đấu quan trọng nhất.
+Với 10C1, Huệ Lâm không chỉ là một tiền đạo, mà còn là biểu tượng cho tinh thần thi đấu kỷ luật, kiên trì và quyết tâm.</p> Mỗi lần ra sân, Huệ Lâm mang theo kỳ vọng của cả tập thể, và bằng những gì đã thể hiện, niềm tin đó là hoàn toàn có cơ sở. Dù phía trước còn nhiều thử thách, cái tên Siêu tiền đạo Huệ Lâm – 10C1 chắc chắn sẽ tiếp tục được nhắc đến như một phần quan trọng trong hành trình phát triển và chinh phục của đội bóng này. Trong tập thể 10C1, nơi mỗi cá nhân đều mang một màu sắc riêng, cái tên Huệ Lâm luôn được nhắc đến với sự chú ý đặc biệt. Không phải vì những lời nói ồn ào hay sự phô trương, mà bởi lối chơi âm thầm, chắc chắn và đầy quyết đoán trên hàng công. Với vai trò tiền đạo cấm, Huệ Lâm là mẫu cầu thủ luôn biết cách xuất hiện đúng lúc, đúng chỗ – nơi chỉ cần một khoảnh khắc chậm trễ cũng có thể đánh mất cơ hội.
+Trên sân, Huệ Lâm không phải người chạy nhiều nhất, cũng không phải người hoa mỹ nhất, nhưng lại là người nguy hiểm nhất trong vòng cấm. Mỗi bước di chuyển đều có mục đích, mỗi pha chạm bóng đều mang theo ý đồ rõ ràng. Đó là phẩm chất của một tiền đạo thực thụ: không cần quá nhiều bóng, chỉ cần một cơ hội là đủ để tạo khác biệt.
+Trong màu áo 10C1, Huệ Lâm đã ghi được tổng cộng 2 bàn thắng – con số không quá lớn nếu chỉ nhìn bề ngoài, nhưng lại mang ý nghĩa cực kỳ quan trọng.</p> Cả hai bàn thắng đều đến trong những thời điểm then chốt, khi đội cần một người đứng ra phá vỡ thế bế tắc. Điều đó cho thấy bản lĩnh và tâm lý thi đấu vững vàng – thứ không thể rèn luyện trong ngày một ngày hai.
+Ngoài khả năng dứt điểm, Huệ Lâm còn là cầu nối quan trọng giữa tuyến trên và tuyến giữa. Những pha che chắn bóng, làm tường và thu hút hậu vệ đối phương đã mở ra không gian cho đồng đội băng lên. Đó là thứ đóng góp thầm lặng nhưng cực kỳ giá trị, giúp lối chơi chung của 10C1 trở nên mạch lạc và hiệu quả hơn.
+Không ồn ào, không phô trương, Huệ Lâm chọn cách để hành động lên tiếng. Trên sân cỏ, mỗi lần Huệ Lâm đứng trong vòng cấm, đối phương đều phải dè chừng, bởi chỉ một khoảnh khắc lơ là cũng có thể phải trả giá. </p> 
+---
+
+<p>Trong tập thể 10C1, nơi mỗi cá nhân đều mang một màu sắc riêng, cái tên <strong>Huệ Lâm</strong> luôn được nhắc đến với sự chú ý đặc biệt. Không phải vì những lời nói ồn ào hay sự phô trương, mà bởi lối chơi âm thầm, chắc chắn và đầy quyết đoán trên hàng công. Với vai trò <strong>tiền đạo cấm</strong>, Huệ Lâm là mẫu cầu thủ luôn biết cách xuất hiện đúng lúc, đúng chỗ – nơi chỉ cần một khoảnh khắc chậm trễ cũng có thể đánh mất cơ hội.</p><p>Trên sân, Huệ Lâm không phải người chạy nhiều nhất, cũng không phải người hoa mỹ nhất, nhưng lại là người nguy hiểm nhất trong vòng cấm. Mỗi bước di chuyển đều có mục đích, mỗi pha chạm bóng đều mang theo ý đồ rõ ràng. Đó là phẩm chất của một tiền đạo thực thụ: không cần quá nhiều bóng, chỉ cần một cơ hội là đủ để tạo khác biệt.</p><p>Trong màu áo 10C1, Huệ Lâm đã ghi được <strong>tổng cộng 2 bàn thắng</strong>. Con số này tuy không quá lớn nếu nhìn bề ngoài, nhưng lại mang ý nghĩa cực kỳ quan trọng. Cả hai bàn thắng đều đến trong những thời điểm then chốt, khi đội cần một người đứng ra phá vỡ thế bế tắc, thể hiện rõ bản lĩnh và tâm lý thi đấu vững vàng.</p><p>Ngoài khả năng dứt điểm, Huệ Lâm còn đóng vai trò quan trọng trong việc kết nối lối chơi. Những pha che chắn bóng, làm tường và thu hút hậu vệ đối phương đã tạo điều kiện cho đồng đội băng lên. Đây là những đóng góp thầm lặng nhưng cực kỳ giá trị, giúp tập thể 10C1 vận hành trơn tru và hiệu quả hơn.</p><p>Không ồn ào, không phô trương, Huệ Lâm chọn cách để hành động lên tiếng. Mỗi lần đứng trong vòng cấm, sự hiện diện của Huệ Lâm đều khiến hàng thủ đối phương phải dè chừng. Chỉ một khoảnh khắc lơ là cũng có thể phải trả giá, và đó chính là sức nặng mà một tiền đạo cấm mang lại.</p><p><strong>PHÂN TÍCH CHUYÊN MÔN:</strong> Ở góc độ chiến thuật, Huệ Lâm là mẫu tiền đạo cấm cổ điển nhưng được vận hành trong một tập thể hiện đại. Điểm mạnh lớn nhất nằm ở khả năng chọn vị trí và đọc tình huống – yếu tố mang tính bản năng và rất khó huấn luyện.</p><p>Trong sơ đồ của 10C1, Huệ Lâm thường là mũi nhọn cao nhất, giữ vị trí trung tâm hàng công. Điều này buộc hàng phòng ngự đối phương phải tập trung, từ đó mở ra không gian cho tuyến hai khai thác. Vai trò của Huệ Lâm không chỉ là ghi bàn mà còn là điểm neo chiến thuật cho toàn đội.</p><p>Hai bàn thắng đã ghi được là minh chứng cho hiệu suất sử dụng cơ hội cực kỳ hiệu quả. Huệ Lâm không cần dứt điểm quá nhiều, mà tập trung vào chất lượng, thể hiện sự điềm tĩnh và tự tin trong những tình huống áp lực cao.</p><p>Về mặt tinh thần, Huệ Lâm là mẫu cầu thủ tạo ra niềm tin cho đồng đội. Khi đội gặp khó khăn, chỉ cần một đường bóng hướng vào vòng cấm, mọi người đều tin rằng Huệ Lâm có thể tạo ra khác biệt. Chính niềm tin này giúp tập thể 10C1 chơi gắn kết và tự tin hơn.</p><p>Nếu tiếp tục duy trì phong độ và hoàn thiện kỹ năng, Huệ Lâm hoàn toàn có thể trở thành đầu tàu hàng công của 10C1 trong những chặng đường tiếp theo, không chỉ bằng bàn thắng mà còn bằng tầm ảnh hưởng chiến thuật và tinh thần.</p>  
+---  
+ Tới đây cũng hết r xin cảm ơn mn đã đọc  </p> 
+ </p>                           ---℗ 10C1 Media [© 2026 10C1. All rights reserved.]---
+  </div>
+
+  <!-- GÓP Ý -->
+  <div class="comment-box">
+    <h3>💬 Góp ý</h3>
+    <input id="name" placeholder="Tên của bạn">
+    <div class="anonymous">
+      <input type="checkbox" id="anon">
+      <label for="anon">Ẩn danh</label>
+    </div>
+    <textarea id="content" placeholder="Nhập góp ý..."></textarea>
+    <button onclick="send()">Gửi</button>
+
+    <div class="comments" id="comments"></div>
+  </div>
+</div>
+
+<!-- NHẠC -->
+<div id="musicBox">
+  <button id="musicBtn">🎵 Bật nhạc</button>
+  <div id="musicStatus"></div>
+</div>
+
+<audio id="bgMusic">
+  <source src="thichcacjnoiluon.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ===== JS + FIREBASE ===== -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBq8N-Bg-YQBXa9zHW4rpmHyUHaL-4B1zs",
+  authDomain: "tai-xiu-vip-by-hung.firebaseapp.com",
+  databaseURL: "https://tai-xiu-vip-by-hung-default-rtdb.firebaseio.com",
+  projectId: "tai-xiu-vip-by-hung",
+  storageBucket: "tai-xiu-vip-by-hung.firebasestorage.app",
+  messagingSenderId: "185931060714",
+  appId: "1:185931060714:web:2a87aebd8e7434a4db8e93"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const commentsRef = ref(db,"comments10c1");
+
+/* slider active */
+const slides=document.querySelectorAll(".slide");
+const slider=document.getElementById("slider");
+slider.addEventListener("scroll",()=>{
+  slides.forEach(s=>{
+    const r=s.getBoundingClientRect();
+    if(r.left>120 && r.right<window.innerWidth-120){
+      s.classList.add("active");
+    }else s.classList.remove("active");
+  });
+});
+
+/* ẩn danh */
+const anon=document.getElementById("anon");
+const nameInput=document.getElementById("name");
+anon.onchange=()=>nameInput.style.display=anon.checked?"none":"block";
+
+/* gửi bình luận – LƯU THẬT */
+window.send=function(){
+  const name=anon.checked?"Ẩn danh":(nameInput.value||"Không tên");
+  const content=document.getElementById("content").value.trim();
+  if(!content) return;
+
+  push(commentsRef,{name,content,time:Date.now()});
+  document.getElementById("content").value="";
+};
+
+/* load bình luận */
+const commentsBox=document.getElementById("comments");
+onValue(commentsRef,(snap)=>{
+  commentsBox.innerHTML="";
+  snap.forEach(c=>{
+    const d=c.val();
+    const div=document.createElement("div");
+    div.className="comment";
+    div.innerHTML=`<b>${d.name}:</b> ${d.content}`;
+    commentsBox.prepend(div);
+  });
+});
+
+/* nhạc */
+const music=document.getElementById("bgMusic");
+const btn=document.getElementById("musicBtn");
+const status=document.getElementById("musicStatus");
+
+btn.onclick=()=>{
+  status.innerText="⏳ Chờ xíu nha, nhạc sắp lên rồi…";
+  setTimeout(()=>{
+    music.play();
+    status.innerText="🔊 Đang phát nhạc";
+    btn.style.display="none";
+  },1500);
+};
+</script>
+</body>
+</html>
